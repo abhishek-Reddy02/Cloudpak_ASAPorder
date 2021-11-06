@@ -1,0 +1,19 @@
+{
+  "order": [
+    {
+      "name": "Tech",
+      "price": 750
+    },
+    {
+      "name": "Cosmetics",
+      "price": 200
+    }
+  ],
+  "customer": {
+    "name": "Jane",
+    "status": "Silver",
+    "total amount": 700,
+    "wallet amount": 42,
+    "offers": []
+  }
+}

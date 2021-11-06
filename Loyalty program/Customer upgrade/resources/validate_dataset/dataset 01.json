@@ -1,0 +1,11 @@
+{
+  "customer": {
+    "name": "abcd",
+    "offers": [
+      {}
+    ],
+    "status": "Platinum",
+    "total amount": 80056,
+    "wallet amount": 5000
+  }
+}

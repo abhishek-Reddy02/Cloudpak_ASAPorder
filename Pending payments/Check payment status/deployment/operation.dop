@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Check payment status">
+  <name>Check-payment-status</name>
+  <uuid>7724ed95-dafc-4bee-aa21-5f8469ec37de</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#839d6890-ca32-4e11-ace7-f4fc6bf00ccc"/>
+  <targetRuleProject href="../../Check%20payment%20status#34633455-e0d3-4fc8-b0f6-d4c0e9a67709"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

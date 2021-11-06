@@ -1,0 +1,81 @@
+
+# Coupon
+Coupon#concept.label = Coupon
+Coupon.Coupon(double,java.lang.String,java.lang.String,boolean)#phrase.navigation = a new {Coupon} where {0, amount} {1, description} {2, label} {3, monetary}
+Coupon.amount#phrase.action = set the amount of {this} to {amount}
+Coupon.amount#phrase.addition_setter = add {amount} to the amount of {this}
+Coupon.amount#phrase.navigation = {amount} of {this}
+Coupon.amount#phrase.subtraction_setter = subtract {amount} from the amount of {this}
+Coupon.description#phrase.action = set the description of {this} to {description}
+Coupon.description#phrase.navigation = {description} of {this}
+Coupon.label#phrase.action = set the label of {this} to {label}
+Coupon.label#phrase.navigation = {label} of {this}
+Coupon.monetary#phrase.action[0] = {this} gets monetary only if {monetary}
+Coupon.monetary#phrase.action[1] = make it {monetary} that {this} is monetary
+Coupon.monetary#phrase.action[1].deprecated = true
+Coupon.monetary#phrase.navigation = {this} is monetary
+Coupon.monetary#phrase.negative_predicate = {this} is not monetary
+Coupon.monetary#phrase.negative_predicate_setter = {this} does not get monetary
+Coupon.monetary#phrase.positive_predicate_setter = {this} gets monetary
+
+# Customer
+Customer#concept.documentation = 
+Customer#concept.label = Customer
+Customer.Customer(java.lang.String,java.util.List,Status,double,double)#phrase.navigation = a new {Customer} where {0, name} {1, offer} {2, status} {3, total amount} {4, wallet amount}
+Customer.addTo_offers(Offer)#phrase.action = add {0} to the offers of {this}
+Customer.clear_offers()#phrase.action = clear the offers of {this}
+Customer.name#phrase.action = set the name of {this} to {name}
+Customer.name#phrase.navigation = {name} of {this}
+Customer.offers#phrase.action = set the offers of {this} to {offer}
+Customer.offers#phrase.navigation = {offer} of {this}
+Customer.removeFrom_offers(Offer)#phrase.action = remove {0} from the offers of {this}
+Customer.status#phrase.action = set the status of {this} to {status}
+Customer.status#phrase.clearer = clear the status of {this}
+Customer.status#phrase.navigation = {status} of {this}
+Customer.totalAmount#phrase.action = set the total amount of {this} to {total amount}
+Customer.totalAmount#phrase.addition_setter = add {total amount} to the total amount of {this}
+Customer.totalAmount#phrase.navigation = {total amount} of {this}
+Customer.totalAmount#phrase.subtraction_setter = subtract {total amount} from the total amount of {this}
+Customer.walletAmount#phrase.action = set the wallet amount of {this} to {wallet amount}
+Customer.walletAmount#phrase.addition_setter = add {wallet amount} to the wallet amount of {this}
+Customer.walletAmount#phrase.navigation = {wallet amount} of {this}
+Customer.walletAmount#phrase.subtraction_setter = subtract {wallet amount} from the wallet amount of {this}
+
+# Item
+Item#concept.label = Item
+Item.Item(java.lang.String,double)#phrase.navigation = a new {Item} where {0, name} {1, price}
+Item.name#phrase.action = set the name of {this} to {name}
+Item.name#phrase.navigation = {name} of {this}
+Item.price#phrase.action = set the price of {this} to {price}
+Item.price#phrase.addition_setter = add {price} to the price of {this}
+Item.price#phrase.navigation = {price} of {this}
+Item.price#phrase.subtraction_setter = subtract {price} from the price of {this}
+
+# Offer
+Offer#concept.label = Offer
+Offer.Offer(Coupon,java.lang.String,OfferType,double)#phrase.navigation = a new {Offer} where {0, coupon} {1, description} {2, type} {3, value}
+Offer.coupon#phrase.action = set the coupon of {this} to {coupon}
+Offer.coupon#phrase.clearer = clear the coupon of {this}
+Offer.coupon#phrase.navigation = {coupon} of {this}
+Offer.description#phrase.action = set the description of {this} to {description}
+Offer.description#phrase.navigation = {description} of {this}
+Offer.type#phrase.action = set the type of {this} to {type}
+Offer.type#phrase.clearer = clear the type of {this}
+Offer.type#phrase.navigation = {type} of {this}
+Offer.value#phrase.action = set the value of {this} to {value}
+Offer.value#phrase.addition_setter = add {value} to the value of {this}
+Offer.value#phrase.navigation = {value} of {this}
+Offer.value#phrase.subtraction_setter = subtract {value} from the value of {this}
+
+# OfferType
+OfferType#concept.label = Offer type
+OfferType.Coupon#instance.label = Coupon
+OfferType.Discount#instance.label = Discount
+OfferType.Wallet#instance.label = Wallet
+
+# Status
+Status#concept.label = Status
+Status.Bronze#instance.label = Bronze
+Status.Gold#instance.label = Gold
+Status.Platinum#instance.label = Platinum
+Status.Silver#instance.label = Silver

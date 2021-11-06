@@ -1,0 +1,10 @@
+{
+  "purchase": 1850,
+  "customer": {
+    "wallet amount": 30,
+    "status": "Bronze",
+    "name": "John",
+    "offers": [],
+    "total amount": 2400
+  }
+}

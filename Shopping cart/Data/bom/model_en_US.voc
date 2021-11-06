@@ -1,0 +1,56 @@
+
+# Customer
+Customer#concept.documentation = customer details
+Customer#concept.label = Customer
+Customer.Customer(java.lang.String,Status)#phrase.navigation = a new {Customer} where {0, name} {1, status}
+Customer.name#phrase.action = set the name of {this} to {name}
+Customer.name#phrase.navigation = {name} of {this}
+Customer.status#phrase.action = set the status of {this} to {status}
+Customer.status#phrase.clearer = clear the status of {this}
+Customer.status#phrase.navigation = {status} of {this}
+
+# Item
+Item#concept.label = Item
+Item.Item(java.lang.String,double)#phrase.navigation = a new {Item} where {0, name} {1, price}
+Item.name#phrase.action = set the name of {this} to {name}
+Item.name#phrase.navigation = {name} of {this}
+Item.price#phrase.action = set the price of {this} to {price}
+Item.price#phrase.addition_setter = add {price} to the price of {this}
+Item.price#phrase.navigation = {price} of {this}
+Item.price#phrase.subtraction_setter = subtract {price} from the price of {this}
+
+# Result
+Result#concept.label = Result
+Result.Result(double,double,double)#phrase.navigation = a new {Result} where {0, given discount} {1, loyalty points} {2, price}
+Result.givenDiscount#phrase.action = set the given discount of {this} to {given discount}
+Result.givenDiscount#phrase.addition_setter = add {given discount} to the given discount of {this}
+Result.givenDiscount#phrase.navigation = {given discount} of {this}
+Result.givenDiscount#phrase.subtraction_setter = subtract {given discount} from the given discount of {this}
+Result.loyaltyPoints#phrase.action = set the loyalty points of {this} to {loyalty points}
+Result.loyaltyPoints#phrase.addition_setter = add {loyalty points} to the loyalty points of {this}
+Result.loyaltyPoints#phrase.navigation = {loyalty points} of {this}
+Result.loyaltyPoints#phrase.subtraction_setter = subtract {loyalty points} from the loyalty points of {this}
+Result.price#phrase.action = set the price of {this} to {price}
+Result.price#phrase.addition_setter = add {price} to the price of {this}
+Result.price#phrase.navigation = {price} of {this}
+Result.price#phrase.subtraction_setter = subtract {price} from the price of {this}
+
+# ShoppingCart
+ShoppingCart#concept.label = Shopping cart
+ShoppingCart.ShoppingCart(java.util.List,double)#phrase.navigation = a new {Shopping cart} where {0, item} {1, price}
+ShoppingCart.addTo_items(Item)#phrase.action = add {0} to the items of {this}
+ShoppingCart.clear_items()#phrase.action = clear the items of {this}
+ShoppingCart.items#phrase.action = set the items of {this} to {item}
+ShoppingCart.items#phrase.navigation = {item} of {this}
+ShoppingCart.price#phrase.action = set the price of {this} to {price}
+ShoppingCart.price#phrase.addition_setter = add {price} to the price of {this}
+ShoppingCart.price#phrase.navigation = {price} of {this}
+ShoppingCart.price#phrase.subtraction_setter = subtract {price} from the price of {this}
+ShoppingCart.removeFrom_items(Item)#phrase.action = remove {0} from the items of {this}
+
+# Status
+Status#concept.label = Status
+Status.Bronze#instance.label = Bronze
+Status.Gold#instance.label = Gold
+Status.Platinum#instance.label = Platinum
+Status.Silver#instance.label = Silver

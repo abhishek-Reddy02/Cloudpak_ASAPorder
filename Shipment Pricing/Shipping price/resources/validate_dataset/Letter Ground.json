@@ -1,0 +1,13 @@
+{
+  "distance": 250,
+  "shipment": {
+    "size": "Pack 1",
+    "weight": 2
+  },
+  "method": {
+    "transport": "Air",
+    "pickup": "Pickup",
+    "next day": true
+  },
+  "customer": "Silver"
+}

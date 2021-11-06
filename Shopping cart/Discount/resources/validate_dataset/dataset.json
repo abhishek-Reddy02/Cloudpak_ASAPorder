@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "name": "One",
+      "price": 780
+    },
+    {
+      "name": "Two",
+      "price": 1800
+    }
+  ],
+  "customer": {
+    "status": "Gold",
+    "name": "John"
+  }
+}

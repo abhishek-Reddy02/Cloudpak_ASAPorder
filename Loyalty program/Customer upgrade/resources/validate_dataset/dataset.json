@@ -1,0 +1,9 @@
+{
+  "customer": {
+    "name": "John",
+    "status": "Gold",
+    "total amount": 8000,
+    "wallet amount": 354,
+    "offers": []
+  }
+}
